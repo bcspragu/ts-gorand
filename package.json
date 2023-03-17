@@ -1,0 +1,33 @@
+{
+  "name": "ts-gorand",
+  "version": "0.0.1",
+  "description": "A Typescript port of Go's math/rand pseudorandom number generator",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/bcspragu/ts-gorand"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=10.4.0"
+  }
+}
